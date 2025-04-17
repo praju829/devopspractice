@@ -1,0 +1,8 @@
+---
+- hosts: all
+   become:true
+  tasks:
+  - name: uninstall a package
+    yum:
+     name: httpd
+     state: absent
